@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="register.css">
+    </head>
+    <body>
+        <h1>Registration Form</h1>
+        <div class="box">
+            <form id="registrationForm" onsubmit="return validateForm()">
+                <label for="username" class="u">Enter Username:</label>
+                <input type="text" id="username" name="username"  placeholder="Username" required class="i">
+                <span id="usernameError" class="error"></span><br>
+
+                <label for="email" class="e">Enter Email:</label>
+                <input type="email" id="email" name="email" placeholder="Email" required class="i1">
+                <span id="emailError" class="error"></span><br>
+                
+                <label for="password" class="p">Enter Password:</label>
+                <input type="password" id="password" name="password" placeholder="Email"    required class="i2">
+                <span id="passwordError" class="error"></span><br>
+
+                <input type="submit" value="Register" class="s">
+            </form>
+        </div>
+        <script src="register.js"></script>
+    </body>
+</html>
